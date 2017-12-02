@@ -1,6 +1,5 @@
-function hello(divName: string, compiler: string) {
-  const elt = document.getElementById(divName);
-  elt.innerText = `Hello ${compiler}`;
-}
+import Drag from './drag'
 
-hello("box", "Drag");
+const oBox: HTMLElement = document.getElementById('box')
+
+new Drag(oBox)

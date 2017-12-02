@@ -45,7 +45,7 @@ gulp.task('default', function () {
       extensions: ['.ts']
     })
     .bundle()
-    .pipe(source('drag.js'))
+    .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(sourcemaps.write('./'))
